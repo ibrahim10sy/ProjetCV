@@ -1,0 +1,466 @@
+:root{
+    --clr-primary-1:rgba(27,49,79,1);
+    --clr-primary-2:rgba(229,229,229,1);
+    --clr-primary-3:rgba(75,112,134,1);
+    --clr-primary-4:rgba(217,217,217,1);
+    --clr-primary-5:rgba(66,108,139,1);
+}
+
+*{
+    margin: 0; padding: 0;
+}
+/* .header{
+    width: 800px;
+    height: 5px;
+    background: var( --clr-primary-4);
+} */
+.container{
+    width: 800px;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 1rem;
+    background-color: var(--clr-primary-2);
+    margin-left: 300px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    
+}
+/* la partie gauche */
+.left{
+    width: 300px; height: 1087px;
+    background-color: var(--clr-primary-4);
+    position: relative;
+}
+/* la partie droite */
+.right{
+    width:  510px;  height: 1072px;
+    /* margin-top: 1rem; */
+}
+/* profil-entete */
+.profil-entete{
+    border-radius: 0 0 268px 268px;
+    background: var(--clr-primary-1);
+    width: 300px;
+    height: 190px;
+}
+/* image de profil */
+.img-profil{
+    position: absolute;
+    width: 150px; height: 150px;
+    top: 7%; left: 24%;
+    background-image: url(image/sy.png);
+    background-position: top;
+    background-size: cover;
+    border-radius: 50% ;
+}
+/* les rectangles */
+.rectangle{
+    width: 85%; height: 35px;
+    border: 1px solid rgb(128, 127, 127);
+    border-radius: 30px;
+    margin-top: 3rem; 
+    margin-left: 1.5rem;
+}
+.rectangle-blue{
+    width: 70%; height: 35px;
+    border-radius: 30px;
+    background: var(--clr-primary-1);
+}
+.rectangle-blue p{
+    line-height: 30px;
+    margin-left: 2rem; 
+    font-family: 'Poppins';
+    font-weight: 700;
+    color: #fff;
+}
+.profil p{
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+/* contact */
+.rectangle-con{
+    width: 85%; height: 35px;
+    border: 1px solid rgb(128, 127, 127);
+    border-radius: 30px;
+    margin-top: 2rem; 
+    margin-left: 1.5rem;
+}
+.rectangle-blue-con{
+    width: 70%; height: 35px;
+    border-radius: 30px;
+    background: var(--clr-primary-1);
+}
+.rectangle-blue-con p{
+    font-family: 'Poppins';
+    font-weight: 700;
+    color: #fff;
+    margin-left: 2rem;
+    line-height: 30px;
+}
+.info-con{
+    margin: 1.5rem;
+}
+.info-con p{
+    margin-bottom: 1rem;
+}
+i{
+    margin-right: 5px;
+}
+/* langues */
+.rectangle-lan{
+    width: 85%; height: 35px;
+    border: 1px solid rgb(128, 127, 127);
+    border-radius: 30px;
+    margin-top: 2rem; 
+    margin-left: 1.5rem;
+}
+.rectangle-blue-lan{
+    width: 70%; height: 35px;
+    border-radius: 30px;
+    background: var(--clr-primary-1);
+}
+.rectangle-blue-lan p{
+    font-family: 'Poppins';
+    font-weight: 700;
+    color: #fff;
+    line-height: 30px;
+    margin-left: 2rem;
+}
+.info-lan{
+    margin: 1rem;
+}
+.info-lan p{
+    margin-top: 1rem;
+}
+.recB{
+    width: 95%; height: 10px;
+    border: 1px solid rgb(128, 127, 127);
+}
+.recB1{
+    background: var(--clr-primary-3);
+    width: 95%; height: 10px;
+}
+.recF{
+    width: 95%; height: 10px;
+    border: 1px solid rgb(128, 127, 127);
+}
+.recF1{
+    background: var(--clr-primary-3);
+    width: 80%; height: 10px;
+}
+.recA{
+    width: 95%; height: 10px;
+    border: 1px solid rgb(128, 127, 127);
+}
+.recA1{
+    background: var(--clr-primary-3);
+    width: 20%; height: 10px;
+}
+
+/* la partie droite */
+.right h1{
+    margin-left: 50%;
+    font-weight: 800;
+    font-family: 'Poppins';
+    color: var(--clr-primary-5);
+}
+.right h4{
+    margin-left: 50%;
+    margin-top: 10px;
+    font-weight: 800;
+    font-family: 'Poppins';
+    color: var(--clr-primary-5);
+}
+/* la partie formation */
+.rectangle-F{
+    width: 85%; height: 35px;
+    border: 1px solid rgb(128, 127, 127);
+    border-radius: 30px;
+    margin-top: 3rem; 
+    margin-left: 1rem;
+}
+.rectangle-blue-F{
+    width: 70%; height: 35px;
+    border-radius: 30px;
+    background: var(--clr-primary-1);
+}
+.rectangle-blue-F h2{
+    /* position: absolute;
+    top: 26%;  */
+    margin-left: 2rem;
+    color: #fff;
+    line-height: 30px;
+}
+.formation{
+    margin: 1.5rem;
+    border-left: 1px var(--clr-primary-1) solid ;
+    height: 240px;
+}
+h3{
+    color: var(--clr-primary-3);
+    margin-left: 10px;
+}
+/* partie expérience */
+
+.rectangle-E{
+    width: 85%; height: 35px;
+    border: 1px solid rgb(128, 127, 127);
+    border-radius: 30px;
+    margin-top: 2rem; 
+    margin-left: 1rem;
+}
+.rectangle-blue-E{
+    width: 70%; height: 35px;
+    border-radius: 30px;
+    background: var(--clr-primary-1);
+}
+.rectangle-blue-E h2{
+    margin-left: 2rem;
+    color: #fff;
+    line-height: 30px;
+}
+.exp{
+    display: flex;
+    gap: 4rem;
+    margin : 1rem;
+    margin-bottom: 1rem;
+}
+.comp{
+    margin: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+.obj p{
+    /* text-align: justify; */
+    margin: 1rem;
+    
+}
+@media screen and (max-width:384px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        width: 650px;
+        margin: 0;
+        height: 1150px;
+       }
+    .left{
+        width: 200px;
+        height: 1150px;
+    }
+    .right{
+        width: 400px;
+        margin-right: 0;
+        height: auto;
+    }
+    .right h1{
+        margin-left: 55%;
+       
+    }
+    .right h4{
+        margin-left: 50%;
+        margin-top: 10px;
+        font-weight: 800;
+        font-family: 'Poppins';
+        color: var(--clr-primary-5);
+    }
+    .profil-entete{
+        border-radius: 0 0 268px 268px;
+        background: var(--clr-primary-1);
+        width: 200px;
+        height: 170px;
+    }
+    .img-profil{
+        width: 100px; height: 100px;
+        top: 8%; left: 27%;
+    
+    }
+    .rectangle{
+        width: 85%; height: 35px;
+        margin-left: 15px;
+    }
+    .rectangle-blue{
+        width: 70%; height: 35px;
+    }
+    .rectangle-blue p{
+        line-height: 30px;
+        margin-left: 1rem; 
+        font-family: 'Poppins';
+        font-weight: 700;
+        color: #fff;
+    }
+    .rectangle-con{
+        width: 85%; height: 35px;
+        margin-left: 15px;
+    }
+    .rectangle-blue-con{
+        width: 70%; height: 35px;
+    }
+    .rectangle-blue-con p{
+        margin-left: 15px;
+    }
+    .rectangle-lan{
+        width: 85%; height: 35px;
+        margin-left: 15px;
+    }
+    .rectangle-blue-lan{
+        width: 70%; height: 35px;
+    }
+    .rectangle-blue-lan p{
+        margin-left: 15px;
+    }
+}
+@media screen and (max-width:420px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        width: 650px;
+        margin: 0;
+        height: 1150px;
+       }
+    .left{
+        width: 200px;
+        height: 1150px;
+    }
+    .right{
+        width: 400px;
+        margin-right: 0;
+        height: auto;
+    }
+    .right h1{
+        margin-left: 55%;
+       
+    }
+    .right h4{
+        margin-left: 50%;
+        margin-top: 10px;
+        font-weight: 800;
+        font-family: 'Poppins';
+        color: var(--clr-primary-5);
+    }
+    .profil-entete{
+        border-radius: 0 0 268px 268px;
+        background: var(--clr-primary-1);
+        width: 200px;
+        height: 170px;
+    }
+    .img-profil{
+        width: 100px; height: 100px;
+        top: 8%; left: 27%;
+    
+    }
+    .rectangle{
+        width: 85%; height: 35px;
+        margin-left: 15px;
+    }
+    .rectangle-blue{
+        width: 70%; height: 35px;
+    }
+    .rectangle-blue p{
+        line-height: 30px;
+        margin-left: 1rem; 
+        font-family: 'Poppins';
+        font-weight: 700;
+        color: #fff;
+    }
+    .rectangle-con{
+        width: 85%; height: 35px;
+        margin-left: 15px;
+    }
+    .rectangle-blue-con{
+        width: 70%; height: 35px;
+    }
+    .rectangle-blue-con p{
+        margin-left: 15px;
+    }
+    .rectangle-lan{
+        width: 85%; height: 35px;
+        margin-left: 15px;
+    }
+    .rectangle-blue-lan{
+        width: 70%; height: 35px;
+    }
+    .rectangle-blue-lan p{
+        margin-left: 15px;
+    }
+}
+@media screen and (max-width:450px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        width: 650px;
+        margin: 0;
+        height: 1150px;
+       }
+    .left{
+        width: 200px;
+        height: 1150px;
+    }
+    .right{
+        width: 400px;
+        margin-right: 0;
+        height: auto;
+    }
+    .right h1{
+        margin-left: 55%;
+       
+    }
+    .right h4{
+        margin-left: 50%;
+        margin-top: 10px;
+        font-weight: 800;
+        font-family: 'Poppins';
+        color: var(--clr-primary-5);
+    }
+    .profil-entete{
+        border-radius: 0 0 268px 268px;
+        background: var(--clr-primary-1);
+        width: 200px;
+        height: 170px;
+    }
+    .img-profil{
+        width: 100px; height: 100px;
+        top: 8%; left: 27%;
+    
+    }
+    .rectangle{
+        width: 85%; height: 35px;
+        margin-left: 15px;
+    }
+    .rectangle-blue{
+        width: 70%; height: 35px;
+    }
+    .rectangle-blue p{
+        line-height: 30px;
+        margin-left: 1rem; 
+        font-family: 'Poppins';
+        font-weight: 700;
+        color: #fff;
+    }
+    .rectangle-con{
+        width: 85%; height: 35px;
+        margin-left: 15px;
+    }
+    .rectangle-blue-con{
+        width: 70%; height: 35px;
+    }
+    .rectangle-blue-con p{
+        margin-left: 15px;
+    }
+    .rectangle-lan{
+        width: 85%; height: 35px;
+        margin-left: 15px;
+    }
+    .rectangle-blue-lan{
+        width: 70%; height: 35px;
+    }
+    .rectangle-blue-lan p{
+        margin-left: 15px;
+    }
+}
